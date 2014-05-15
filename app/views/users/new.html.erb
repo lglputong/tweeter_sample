@@ -1,0 +1,19 @@
+<%= content_for :header do %>
+	Tweeter
+<% end %>
+
+<h1>Create a new user</h1>
+<%= form_for User.new do |f| %>
+	<%= f.label :username %>
+	<%= f.text_field :username %>
+	<br />
+	<%= f.label :password %>
+	<%= f.password_field :username %>
+	<br />
+	<%= f.submit 'Register new user' %>
+<% end %>
+<!--automatic na punta sa fields of model-->
+
+<%= content_for :footer do %>
+	Java nice day
+<% end %>
