@@ -2,7 +2,7 @@
 	Tweeter
 <% end %>
 
-<h1>Create a new user</h1>
+<h1>Editing User</h1>
 <%= form_for @user do |f| %>
 	<%= f.label :username %>
 	<%= f.text_field :username %>
@@ -12,7 +12,6 @@
 	<br />
 	<%= f.submit 'Save' %>
 <% end %>
-<!--automatic na punta sa fields of model-->
 
 <%= content_for :footer do %>
 	Java nice day

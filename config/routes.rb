@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get '/users/new' #should load form
-  post 'users'	=> 'users#create' #should go to users create
+	resources :users
+
   root 'pages#index' #get '/' => 'pages/index'
   get '/about' => 'pages#about'
 	get '/another' => 'pages#another'
