@@ -40,3 +40,12 @@ gem 'spring',        group: :development
 
 gem 'twitter-bootstrap-rails'
 
+gem 'simple_form'
+gem 'devise'
+
+gem 'tzinfo-data', platforms:  [:x64_mingw,:mingw, :mswin]
+require 'rbconfig'
+gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
+
+gem 'rails_12factor', group: :production
+gem 'pg', group :production

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
 	resources :users
+  resources :tweets
 
   root 'pages#index' #get '/' => 'pages/index'
   get '/about' => 'pages#about'
